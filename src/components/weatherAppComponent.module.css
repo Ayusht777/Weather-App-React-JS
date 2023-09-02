@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
+
+.AppBox {
+    background-color: #111015;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 1rem;
+
+    font-family: "Comfortaa", cursive;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header .location {
+    height: 100%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.header .SearchBox {
+    height: 100%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchBox .SearchBar {
+    width: 50%;
+    height: 60%;
+    min-width: 15rem;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 0 0.1rem;
+}
+
+.SearchBar input {
+    height: 100%;
+    flex-basis: 90%;
+    border-radius: 2rem 0 0 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgb(255, 255, 255);
+}
+
+.SearchBar button {
+    height: 100%;
+    flex-basis: 10%;
+    border-radius: 0 2rem 2rem 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header .userLogo {
+    height: 100%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.userLogo img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.weatherInfoBox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    grid-gap: 1rem;
+}
+
+.weatherInfoBox>div {
+    height: 100%;
+    border-radius: 1rem;
+    min-height: 320px;
+}
+
+.weatherInfoBox .WeatherCurrent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.WeatherCurrent>div {
+    box-sizing: border-box;
+}
+
+.WeatherCurrent .weatherTitle {
+    width: 100%;
+    height: 20%;
+    margin-top: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherTitle .TitleIcon {
+    height: 100%;
+    flex-basis: 20%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.TitleIcon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #f97f29;
+    position: absolute;
+    z-index: 2;
+}
+
+.TitleIcon div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.weatherTitle .Title {
+    height: 100%;
+    flex-basis: 80%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: #fff;
+}
+
+.Title h1 {
+    margin: 0;
+}
+
+.Title p {
+    margin: 0;
+    padding-left: 0.2rem;
+}
+
+.WeatherCurrent .weatherBody {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.weatherBody img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+    outline: none;
+    border: none;
+}
+
+.WeatherCurrent .weatherFooter {
+    width: 100%;
+    height: 40%;
+    border-radius: 0 0 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.weatherFooter>div {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weatherFooter .one h1,
+p {
+    margin: 0;
+}
+
+.one p:last-child {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.weatherFooter .one h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.weatherFooter .two h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.weatherFooter .three h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.weatherInfoBox .AirInfo {
+    background-image: linear-gradient(145deg,
+            hsl(216deg 33% 97%) 0%,
+            hsl(216deg 41% 97%) 11%,
+            hsl(216deg 48% 97%) 22%,
+            hsl(216deg 56% 97%) 33%,
+            hsl(216deg 63% 97%) 44%,
+            hsl(216deg 70% 97%) 56%,
+            hsl(216deg 78% 97%) 67%,
+            hsl(216deg 85% 97%) 78%,
+            hsl(216deg 93% 97%) 89%,
+            hsl(216deg 100% 97%) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.AirInfo .Airheader {
+    width: 100%;
+    height: 20%;
+    margin-top: 0.5rem;
+    /* background-color: #F97F29; */
+    border-radius: 1rem 1rem 0 0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.Airheader .AirIcon {
+    height: 100%;
+    border-radius: 1rem 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.AirIcon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+}
+
+.AirIcon div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #f97f29;
+    border-radius: 50%;
+}
+
+.Airheader .AirTitle {
+    height: 100%;
+    border-radius: 0 1rem 0 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: #1e1e1e;
+}
+
+.AirTitle h1 {
+    margin: 0;
+}
+
+.AirTitle p {
+    margin: 0;
+    padding-left: 0.2rem;
+}
+
+.AirInfo .Airbody {
+    width: 100%;
+    height: 40%;
+    /* background-color: #22150c; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../components/assets/openweathermap/wind.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Airfooter {
+    width: 100%;
+    height: 40%;
+    /* background-color: #f929c1; */
+    box-sizing: border-box;
+    border-radius: 0 0 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.Airfooter>div {
+    box-sizing: border-box;
+    height: 100%;
+    /* background-color: #111015; */
+    border-radius: 0.5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.Airfooter .Aone {
+    background-color: #1e1e1e;
+}
+
+.Airfooter .Atwo {
+    text-align: center;
+}
+
+/*  */
+.Airfooter .Athree {
+    background-color: #1e1e1e;
+}
+
+.weatherInfoBox .Recent {
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Recent .Rheader {
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    margin-top: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.Rheader .RIcon {
+    height: 100%;
+    border-radius: 1rem 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.RIcon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #f97f29;
+    position: absolute;
+    z-index: 2;
+}
+
+.RIcon div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.RTitle {
+    height: 100%;
+    border-radius: 0 1rem 0 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: #ffffff;
+}
+
+.RTitle h1 {
+    margin: 0;
+}
+
+.RTitle p {
+    margin: 0;
+    padding-left: 0.2rem;
+}
+
+.Recent .Rbody {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.Rbody ul {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.Rbody ul li {
+    list-style: none;
+    width: 100%;
+    text-transform: capitalize;
+    height: 20%;
+    background-color: #f6f8f9;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.Rbody ul li img {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Rbody ul li h1 {
+    margin: 0;
+    color: #1e1e1e;
+    padding-left: 0.5rem;
+}
+
+.weatherForeCastBox {
+    min-height: 320px;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherForeCastBox .ForeCastDiv {
+    width: 100%;
+    background-color: #1e1e1e;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+
+.ForeCastDiv .ForeCastInfo {
+    width: 100%;
+    background-color: #111015;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    box-sizing: border-box;
+}
+
+.ForeCastInfo .Fheader,
+.Fbody,
+.Ffooter {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.Fheader {
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.Fbody {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.Fbody img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.Ffooter {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media (max-width: 1250px) {
+    .AppBox {
+        height: 100%;
+    }
+
+    .weatherInfoBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .WeatherCurrent {
+        min-height: 360px;
+        max-height: 360px;
+    }
+
+    .AirInfo {
+        min-height: 360px;
+        max-height: 360px;
+    }
+
+    .Recent {
+        min-height: 360px;
+        max-height: 360px;
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 1050px) {
+    .AppBox {
+        height: 100%;
+    }
+
+    .ForeCastDiv {
+        width: 100%;
+        grid-template-columns: 100% !important;
+    }
+
+    .ForeCastInfo {
+        grid-template-columns: 1fr 2fr 1fr;
+        max-height: 5rem;
+    }
+
+    .Fheader {
+        border-bottom: none;
+        border-radius: 0;
+        border-right: 2px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .Fbody {
+        border-bottom: none;
+        border-radius: 0;
+        border-right: 2px solid rgba(255, 255, 255, 0.7);
+    }
+}
+
+@media (max-width: 850px) {
+    .weatherInfoBox {
+        grid-template-columns: 1fr;
+    }
+
+    .weatherInfoBox>div {
+        width: 100%;
+        grid-column: 1;
+    }
+}

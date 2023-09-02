@@ -1,0 +1,23 @@
+#root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+body{
+    background-color: #2B2B2B;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    
+    
+}
