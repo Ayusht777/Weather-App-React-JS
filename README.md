@@ -41,11 +41,11 @@ Looking for an amazing weather app that is both modern and responsive? Look no f
 ## 🏃‍♀️ How to Run Locally
 
 1. Clone the repository : 
-      `git clone https://github.com/Ayusht777/Github-User-SearchX.git`
+      `git clone https://github.com/Ayusht777/Weather-App-React-JS.git)`
    
 
 2. Navigate to the project directory : 
-      `cd Github-User-SearchX`
+      `cd Weather-App-React`
    
 
 3. Install dependencies using your preferred package manager :
