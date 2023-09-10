@@ -37,4 +37,38 @@ Looking for an amazing weather app that is both modern and responsive? Look no f
  - React Mathjs
  - axios
 
+------------
+## 🏃‍♀️ How to Run Locally
+
+1. Clone the repository : 
+      `git clone https://github.com/Ayusht777/Github-User-SearchX.git`
+   
+
+2. Navigate to the project directory : 
+      `cd Github-User-SearchX`
+   
+
+3. Install dependencies using your preferred package manager :
+
+    `npm install`
+   
+   or
+
+    `yarn install`
+   
+
+4. Start the development server :
+
+     `npm run dev`
+   
+   or
+
+     `yarn dev`
+   
+
+5. Open your browser and visit `http://localhost:3000` to see the app running locally.
+
+--------------
+
+Feel free to explore and customize the project according to your needs. Happy coding! 😊🚀
 
